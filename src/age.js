@@ -55,7 +55,7 @@ export class Age {
   }
 
   jupiterExpectancy() {
-    
+    this.yearsLeftJupiter = parseFloat(((this.earthLifeExpectancy - this.earthAge) / 11.86).toFixed(2));
   }
 
 }
