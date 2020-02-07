@@ -74,7 +74,9 @@ export class Age {
   }
 
   beyondMars() {
-    
+    if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
+      this.marsYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 1.88).toFixed(2));
+    }
   }
 
 }
