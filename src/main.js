@@ -13,6 +13,7 @@ $(document).ready(function() {
     if (isNaN(inputAge) === false) {
       let age = new Age(inputAge);
       age.earthExpectancy(inputBioligy);
+      age.determineMayflyLives();
       age.determinePlanetAges();
       age.determinePlanetExpectancies();
       age.determineBeyondExpectancy();
