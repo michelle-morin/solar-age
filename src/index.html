@@ -8,10 +8,33 @@
     <h1>Super Galactic Age Calculator</h1>
   </div>
   <form class="card">
-
+    <h3>What is your current age, in years?</h3>
+    <input type="text" class="form-control" id="age">
+    <h3>Select one of the following:</h3>
+    <div class="radio">
+      <label>
+        <input type="radio" name="biology" value="M" checked>
+        Male
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="biology" value="F">
+        Female
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="biology" value="O">
+        Prefer not to answer
+      </label>
+    </div>
+    <button type="submit" class="btn">calculate!</button>
   </form>
-  <div id="output">
-    
+  <div id="output" class="card">
+    <p>You are <span class="mercury-age"></span> years old on Mercury, <span class="venus-age"></span> years old on Venus, <span class="mars-age"></span> years old on Mars, and <span class="jupiter-age"></span> years old on Jupiter!</p>
+    <p id="under-expectancy">Based on an average life expectancy of <span class="earth-expectancy"></span> Earth years for an individual in your demographic, you're expected to live another <span class="life-mercury"></span> years on Mercury, <span class="life-venus"></span> years on Venus, <span class="life-mars"></span> years on Mars, and <span class="life-jupiter"></span> years on Jupiter!</p>
+    <p id="over-expectancy">Based on an average life expectancy of <span class="earth-expectancy"></span> Earth years for an individual in your demographic, you have exceeded your life expectancy by <span class="over-mercury"></span> years on Mercury, <span class="over-venus"></span> years on Venus, <span class="over-mars"></span> years on Mars, and <span class="over-jupiter"></span> years on Jupiter!</p>
   </div>
 </body>
 </html>
