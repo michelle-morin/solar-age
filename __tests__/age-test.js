@@ -77,4 +77,12 @@ describe('Age', () => {
     expect(newUserAge.mercuryYearsBeyondExpectancy).toBe(16.67);
   });
 
+  test('should determine number of Venus years a user has lived beyond life expectancy', () => {
+    let newUserAge = new Age(85);
+    newUserAge.userBiology("F");
+    newUserAge.earthExpectancy();
+    newUserAge.beyondVenus();
+    expect(newUserAge.venusYearsBeyondExpectancy).toBe(6.45);
+  });
+
 });
