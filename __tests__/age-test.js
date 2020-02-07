@@ -91,4 +91,9 @@ describe('Age', () => {
     newUserAge.determineBeyondExpectancy();
     expect(newUserAge.jupiterYearsBeyondExpectancy).toBe(0.34);
   });
+
+  test('should determine number of mayfly lifespans a human user has lived', () => {
+    userAge.determineMayflyLives();
+    expect(userAge.mayflyLives).toBe(3154000);
+  });
 });
