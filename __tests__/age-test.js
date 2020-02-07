@@ -39,6 +39,13 @@ describe('Age', () => {
     userAge.userBiology("F");
     userAge.earthExpectancy();
     expect(userAge.earthLifeExpectancy).toBe(81);
-  })
+  });
+
+  test('should determine number of years a user has left to live on Mercury', () => {
+    userAge.userBiology("F");
+    userAge.earthExpectancy();
+    userAge.mercuryExpectancy();
+    expect(userAge.yearsLeftMercury).toBe(212.50);
+  });
 
 });
