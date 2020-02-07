@@ -62,4 +62,11 @@ describe('Age', () => {
     expect(userAge.yearsLeftMars).toBe(27.13);
   });
 
+  test('should determine number of years a user has left to live on Jupiter', () => {
+    userAge.userBiology("F");
+    userAge.earthExpectancy();
+    userAge.jupiterExpectancy();
+    expect(userAge.yearsLeftJupiter).toBe(4.30);
+  });
+
 });
