@@ -22,4 +22,8 @@ export class Age {
     this.venusAge = parseFloat((this.earthAge / 0.62).toFixed(2));
   }
 
+  determineMarsAge() {
+    
+  }
+
 }
