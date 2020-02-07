@@ -31,6 +31,7 @@ export class Age {
   }
 
   userBiology(biology) {
+    this.biology = biology;
   }
 
 }
