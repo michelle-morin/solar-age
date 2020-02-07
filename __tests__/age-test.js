@@ -17,7 +17,7 @@ describe('Age', () => {
 
   test('should determine user age in Venus years', () => {
     userAge.determineVenusAge();
-    expect(userAge.mercuryAge).toBe(48.38);
+    expect(userAge.venusAge).toBe(48);
   });
 
 
