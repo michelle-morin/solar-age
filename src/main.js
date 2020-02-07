@@ -14,6 +14,8 @@ $(document).ready(function() {
       let age = new Age(inputAge);
       age.earthExpectancy(inputBioligy);
       age.determineMayflyLives();
+      let comparisonResult = age.compareMayflyToSun();
+      $(".comparison").html(comparisonResult);
       age.determinePlanetAges();
       age.determinePlanetExpectancies();
       age.determineBeyondExpectancy();
