@@ -1,4 +1,5 @@
 import { Age } from './age.js';
+import { ageIsNumber, displayUnderExp, displayOverExp, ageNotNumber } from './display.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,33 +16,14 @@ $(document).ready(function() {
       age.determinePlanetAges();
       age.determinePlanetExpectancies();
       age.determineBeyondExpectancy();
-  
-      $("form").hide();
-      $("#output").show();
-      $(".mercury-age").html(age.mercuryAge);
-      $(".venus-age").html(age.venusAge);
-      $(".mars-age").html(age.marsAge);
-      $(".jupiter-age").html(age.jupiterAge);
-      $(".earth-expectancy").html(age.earthLifeExpectancy);
+      ageIsNumber(age);
       if (age.earthAge <= age.earthLifeExpectancy) {
-        $("#under-expectancy").show();
-        $("#over-expectancy").hide();
-        $(".life-mercury").html(age.yearsLeftMercury);
-        $(".life-jupiter").html(age.yearsLeftJupiter);
-        $(".life-mars").html(age.yearsLeftMars);
-        $(".life-venus").html(age.yearsLeftVenus);
+        displayUnderExp(age);
       } else if (age.earthAge > age.earthLifeExpectancy) {
-        $("#under-expectancy").hide();
-        $("#over-expectancy").show();
-        $(".over-mercury").html(age.mercuryYearsBeyondExpectancy);
-        $(".over-jupiter").html(age.jupiterYearsBeyondExpectancy);
-        $(".over-mars").html(age.marsYearsBeyondExpectancy);
-        $(".over-venus").html(age.venusYearsBeyondExpectancy);
+        displayOverExp(age);
       }
     } else {
-      $("form").hide();
-      $("#output").show().append("Looks like you didn't enter a numerical age. <a href='index.html'>Click here to try again</a>.");
-      $("p").hide();
+      ageNotNumber();
     }
 
   });
