@@ -16,11 +16,11 @@ _This application takes a person’s age in Earth years and creates a class that
 | Webpage determines a person's age in Venus years (one Venus year = 0.62 Earth years) | 30 Earth years | 48.38 Venus years |
 | Webpage determines a person's age in Mars years (one Mars year = 1.88 Earth years) | 30 Earth years | 15.96 Mars years |
 | Webpage determines a person's age in Jupiter years (one Jupiter year = 11.86 Earth years) | 30 Earth years | 2.53 Jupiter years |
-| Webpage determines a person's life expectancy on Earth | 30 Earth years old, female, lives in USA | 81 Earth years |
-| Webpage determines a person's life expectancy on Mercury | 30 Earth years old, female, lives in USA | 337.5 Mercury years |
-| Webpage determines a person's life expectancy on Venus | 30 Earth years old, female, lives in USA | 130.65 Venus years |
-| Webpage determines a person's life expectancy on Mars | 30 Earth years old, female, lives in USA | 43.09 Mars years |
-| Webpage determines a person's life expectancy on Jupiter | 30 Earth years old, female, lives in USA | 6.83 Jupiter years |
+| Webpage determines a person's life expectancy on Earth | female, lives in North America | 81 Earth years |
+| Webpage determines number of Mercury years a person has left to live on Mercury | 30 Earth years old, female | 212.5 Mercury years |
+| Webpage determines number of Venus years a person has left to live on Venus | 30 Earth years old, female | 82.26 Venus years |
+| Webpage determines number of Mars years a person has left to live on Mars | 30 Earth years old, female | 27.13 Mars years |
+| Webpage determines number of Jupiter years a person has left to live on Jupiter | 30 Earth years old, female | 4.30 Jupiter years |
 | Webpage determines number of Mercury years a person has lived beyond their life expectancy | 85 Earth years, female | 16.67 Mercury years |
 | Webpage determines number of Venus years a person has lived beyond their life expectancy | 85 Earth years, female | 6.45 Venus years |
 | Webpage determines number of Mars years a person has lived beyond their life expectancy | 85 Earth years, female | 2.13 Mars years |
