@@ -23,7 +23,7 @@ export function displayUnderExp(inputAge) {
   $(".life-jupiter").html(inputAge.yearsLeftJupiter);
   $(".life-mars").html(inputAge.yearsLeftMars);
   $(".life-venus").html(inputAge.yearsLeftVenus);
-  $("#output").append("<a href='index.html'>Calculate again!</a>.");
+  $("#output").append("<a href='index.html'>Calculate again!</a>");
 }
 
 export function displayOverExp(inputAge) {
@@ -33,5 +33,5 @@ export function displayOverExp(inputAge) {
   $(".over-jupiter").html(inputAge.jupiterYearsBeyondExpectancy);
   $(".over-mars").html(inputAge.marsYearsBeyondExpectancy);
   $(".over-venus").html(inputAge.venusYearsBeyondExpectancy);
-  $("#output").append("<a href='index.html'>Calculate again!</a>.");
+  $("#output").append("<a href='index.html'>Calculate again!</a>");
 }
