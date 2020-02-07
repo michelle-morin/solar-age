@@ -58,6 +58,10 @@ export class Age {
   }
 
   compareMayflyToSun() {
-
+    const sunAgeInEarthYears = 4500000000;
+    const sunAgeInMinutes = sunAgeInEarthYears * 365 * 1440;
+    const sunAgeInMayfly = sunAgeInMinutes / 5;
+    let result = (this.mayflyLives / sunAgeInMayfly).toExponential(2);
+    return parseFloat(result);
   }
 }
