@@ -33,21 +33,25 @@ export class Age {
     } 
   }
 
-  mercuryExpectancy() {
-    this.yearsLeftMercury = parseFloat(((this.earthLifeExpectancy - this.earthAge) / 0.24).toFixed(2));
+  determinePlanetExpectancies() {
+
   }
 
-  venusExpectancy() {
-    this.yearsLeftVenus = parseFloat(((this.earthLifeExpectancy - this.earthAge) / 0.62).toFixed(2));
-  }
+  // mercuryExpectancy() {
+  //   this.yearsLeftMercury = parseFloat(((this.earthLifeExpectancy - this.earthAge) / 0.24).toFixed(2));
+  // }
 
-  marsExpectancy() {
-    this.yearsLeftMars = parseFloat(((this.earthLifeExpectancy - this.earthAge) / 1.88).toFixed(2));
-  }
+  // venusExpectancy() {
+  //   this.yearsLeftVenus = parseFloat(((this.earthLifeExpectancy - this.earthAge) / 0.62).toFixed(2));
+  // }
 
-  jupiterExpectancy() {
-    this.yearsLeftJupiter = parseFloat(((this.earthLifeExpectancy - this.earthAge) / 11.86).toFixed(2));
-  }
+  // marsExpectancy() {
+  //   this.yearsLeftMars = parseFloat(((this.earthLifeExpectancy - this.earthAge) / 1.88).toFixed(2));
+  // }
+
+  // jupiterExpectancy() {
+  //   this.yearsLeftJupiter = parseFloat(((this.earthLifeExpectancy - this.earthAge) / 11.86).toFixed(2));
+  // }
 
   determineBeyondExpectancy() {
     if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
