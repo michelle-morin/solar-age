@@ -53,6 +53,7 @@ export class Age {
   }
 
   determineMayflyLives() {
-
+    let ageInMinutes = this.earthAge * 365 * 1440;
+    this.mayflyLives = (ageInMinutes / 5).toFixed();
   }
 }
