@@ -13,5 +13,8 @@ export class Age {
     this.yearsLeftJupiter = 0;
     this.yearsBeyondExpectancy = 0;
   }
-  
+
+  determineMercuryAge() {
+    
+  }
 }
