@@ -7,14 +7,16 @@ import './styles.css';
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    let inputAge = parseInt($("input#age").val());
-    let inputBioligy = $("input:radio[name=biology]:checked").val();
+    const inputAge = parseInt($("input#age").val());
+    const inputBioligy = $("input:radio[name=biology]:checked").val();
     let age = new Age(inputAge);
     age.earthExpectancy(inputBioligy);
     age.determinePlanetAges();
     age.determinePlanetExpectancies();
     age.determineBeyondExpectancy();
 
+    $("form").hide();
+    $("#output").show();
     $(".mercury-age").html(age.mercuryAge);
     $(".venus-age").html(age.venusAge);
     $(".mars-age").html(age.marsAge);
@@ -23,17 +25,17 @@ $(document).ready(function() {
     if (age.earthAge <= age.earthLifeExpectancy) {
       $("#under-expectancy").show();
       $("#over-expectancy").hide();
-      $("life-mercury").html(age.yearsLeftMercury);
-      $("life-jupiter").html(age.yearsLeftJupiter);
-      $("life-mars").html(age.yearsLeftMars);
-      $("life-venus").html(age.yearsLeftVenus);
+      $(".life-mercury").html(age.yearsLeftMercury);
+      $(".life-jupiter").html(age.yearsLeftJupiter);
+      $(".life-mars").html(age.yearsLeftMars);
+      $(".life-venus").html(age.yearsLeftVenus);
     } else if (age.earthAge > age.earthLifeExpectancy) {
       $("#under-expectancy").hide();
       $("#over-expectancy").show();
-      $("over-mercury").html(age.mercuryYearsBeyondExpectancy);
-      $("over-jupiter").html(age.jupiterYearsBeyondExpectancy);
-      $("over-mars").html(age.marsYearsBeyondExpectancy);
-      $("over-venus").html(age.venusYearsBeyondExpectancy);
+      $(".over-mercury").html(age.mercuryYearsBeyondExpectancy);
+      $(".over-jupiter").html(age.jupiterYearsBeyondExpectancy);
+      $(".over-mars").html(age.marsYearsBeyondExpectancy);
+      $(".over-venus").html(age.venusYearsBeyondExpectancy);
     }
   });
 });
