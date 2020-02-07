@@ -67,4 +67,8 @@ export class Age {
     }
   }
 
+  beyondVenus() {
+    
+  }
+
 }
