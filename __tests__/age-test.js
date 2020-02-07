@@ -96,4 +96,10 @@ describe('Age', () => {
     userAge.determineMayflyLives();
     expect(userAge.mayflyLives).toBe(3153600);
   });
+
+  test('should return quotient of mayfly lifespans user has lived divided by mayfly lifespans during existence of the sun', () => {
+    userAge.determineMayflyLives();
+    let result = userAge.compareMayflyToSun();
+    expect(result).toBe(1.33e-9);
+  });
 });
