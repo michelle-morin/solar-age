@@ -11,7 +11,10 @@ export class Age {
     this.yearsLeftVenus = 0;
     this.yearsLeftMars = 0;
     this.yearsLeftJupiter = 0;
-    this.yearsBeyondExpectancy = 0;
+    this.mercuryYearsBeyondExpectancy = 0;
+    this.venusYearsBeyondExpectancy = 0;
+    this.marsYearsBeyondExpectancy = 0;
+    this.jupiterYearsBeyondExpectancy = 0;
   }
 
   determineMercuryAge() {
@@ -56,6 +59,10 @@ export class Age {
 
   jupiterExpectancy() {
     this.yearsLeftJupiter = parseFloat(((this.earthLifeExpectancy - this.earthAge) / 11.86).toFixed(2));
+  }
+  
+  beyondMercury() {
+    
   }
 
 }
