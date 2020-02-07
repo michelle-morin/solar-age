@@ -35,4 +35,10 @@ describe('Age', () => {
     expect(userAge.biology).toBe("F");
   });
 
+  test('should determine user life expectancy on Earth based on user biology property', () => {
+    userAge.userBiology("F");
+    userAge.earthExpectancy();
+    expect(userAge.earthLifeExpectancy).toBe(81);
+  })
+
 });
