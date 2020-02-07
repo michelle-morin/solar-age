@@ -15,6 +15,6 @@ export class Age {
   }
 
   determineMercuryAge() {
-    
+    this.mercuryAge += (this.earthAge / 0.24);
   }
 }
