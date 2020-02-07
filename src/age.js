@@ -60,29 +60,33 @@ export class Age {
   jupiterExpectancy() {
     this.yearsLeftJupiter = parseFloat(((this.earthLifeExpectancy - this.earthAge) / 11.86).toFixed(2));
   }
+
+  beyondExectancy() {
+
+  }
   
-  beyondMercury() {
-    if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
-      this.mercuryYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 0.24).toFixed(2));
-    }
-  }
+  // beyondMercury() {
+  //   if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
+  //     this.mercuryYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 0.24).toFixed(2));
+  //   }
+  // }
 
-  beyondVenus() {
-    if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
-      this.venusYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 0.62).toFixed(2));
-    }
-  }
+  // beyondVenus() {
+  //   if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
+  //     this.venusYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 0.62).toFixed(2));
+  //   }
+  // }
 
-  beyondMars() {
-    if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
-      this.marsYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 1.88).toFixed(2));
-    }
-  }
+  // beyondMars() {
+  //   if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
+  //     this.marsYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 1.88).toFixed(2));
+  //   }
+  // }
 
-  beyondJupiter() {
-    if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
-      this.jupiterYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 11.86).toFixed(2));
-    }
-  }
+  // beyondJupiter() {
+  //   if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
+  //     this.jupiterYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 11.86).toFixed(2));
+  //   }
+  // }
 
 }
