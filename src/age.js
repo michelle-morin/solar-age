@@ -43,7 +43,7 @@ export class Age {
   }
 
   mercuryExpectancy() {
-    
+    this.yearsLeftMercury = parseFloat(((this.earthLifeExpectancy - this.earthAge) / 0.24).toFixed(2));
   }
 
 }
