@@ -94,6 +94,6 @@ describe('Age', () => {
 
   test('should determine number of mayfly lifespans a human user has lived', () => {
     userAge.determineMayflyLives();
-    expect(userAge.mayflyLives).toBe(3154000);
+    expect(userAge.mayflyLives).toBe(3153600);
   });
 });
