@@ -42,25 +42,25 @@ describe('Age', () => {
 
   test('should determine number of years a user has left to live on Mercury', () => {
     userAge.earthExpectancy("F");
-    userAge.mercuryExpectancy();
+    userAge.determinePlanetExpectancies();
     expect(userAge.yearsLeftMercury).toBe(212.50);
   });
 
   test('should determine number of years a user has left to live on Venus', () => {
     userAge.earthExpectancy("F");
-    userAge.venusExpectancy();
+    userAge.determinePlanetExpectancies();
     expect(userAge.yearsLeftVenus).toBe(82.26);
   });
 
   test('should determine number of years a user has left to live on Mars', () => {
     userAge.earthExpectancy("F");
-    userAge.marsExpectancy();
+    userAge.determinePlanetExpectancies();
     expect(userAge.yearsLeftMars).toBe(27.13);
   });
 
   test('should determine number of years a user has left to live on Jupiter', () => {
     userAge.earthExpectancy("F");
-    userAge.jupiterExpectancy();
+    userAge.determinePlanetExpectancies();
     expect(userAge.yearsLeftJupiter).toBe(4.30);
   });
 
