@@ -93,4 +93,11 @@ describe('Age', () => {
     expect(newUserAge.marsYearsBeyondExpectancy).toBe(2.13);
   });
 
+  test('should determine number of Jupiter years a user has lived beyond life expectancy', () => {
+    let newUserAge = new Age(85);
+    newUserAge.userBiology("F");
+    newUserAge.earthExpectancy();
+    newUserAge.beyondJupiter();
+    expect(newUserAge.jupiterYearsBeyondExpectancy).toBe(0.34);
+  });
 });
