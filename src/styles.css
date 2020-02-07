@@ -1,3 +1,9 @@
 #output {
   display: none;
 }
+
+button.btn {
+  width: 100%;
+  margin-top: 2%;
+  border: 1px solid #111111;
+}
