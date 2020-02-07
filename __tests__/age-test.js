@@ -20,5 +20,10 @@ describe('Age', () => {
     expect(userAge.venusAge).toBe(48.39);
   });
 
+  test('should determine user age in Mars years', () => {
+    userAge.determineMarsAge();
+    expect(userAge.marsAge).toBe(15.96);
+  });
+
 
 });
