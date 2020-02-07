@@ -33,9 +33,9 @@ export class Age {
     this.jupiterAge = parseFloat((this.earthAge / 11.86).toFixed(2));
   }
 
-  userBiology(biology) {
-    this.biology = biology;
-  }
+  // userBiology(biology) {
+  //   this.biology = biology;
+  // }
 
   earthExpectancy() {
     if (this.biology === "F") {
