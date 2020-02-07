@@ -1,5 +1,4 @@
 import { Age } from './age.js';
-import { } from './display.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
