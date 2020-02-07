@@ -62,7 +62,9 @@ export class Age {
   }
   
   beyondMercury() {
-    
+    if (this.earthLifeExpectancy != 0) {
+      this.mercuryYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 0.24).toFixed(2));
+    }
   }
 
 }
