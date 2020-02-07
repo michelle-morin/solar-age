@@ -8,6 +8,7 @@ export function ageIsNumber(inputAge) {
   $(".mars-age").html(inputAge.marsAge);
   $(".jupiter-age").html(inputAge.jupiterAge);
   $(".earth-expectancy").html(inputAge.earthLifeExpectancy);
+  $(".mayfly").html(inputAge.mayflyLives);
 }
 
 export function ageNotNumber() {
