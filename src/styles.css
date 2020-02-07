@@ -86,3 +86,8 @@ a {
   color: #ff8851;
   font-weight: bold;
 }
+
+a:hover {
+  color: #ff8851;
+  font-weight: bold;
+}
