@@ -80,7 +80,9 @@ export class Age {
   }
 
   beyondJupiter() {
-    
+    if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
+      this.jupiterYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 11.86).toFixed(2));
+    }
   }
 
 }
