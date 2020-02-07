@@ -27,7 +27,7 @@ export class Age {
   }
 
   determineJupiterAge() {
-    
+    this.jupiterAge = parseFloat((this.earthAge / 11.86).toFixed(2));
   }
 
 }
