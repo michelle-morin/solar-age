@@ -85,4 +85,12 @@ describe('Age', () => {
     expect(newUserAge.venusYearsBeyondExpectancy).toBe(6.45);
   });
 
+  test('should determine number of Mars years a user has lived beyond life expectancy', () => {
+    let newUserAge = new Age(85);
+    newUserAge.userBiology("F");
+    newUserAge.earthExpectancy();
+    newUserAge.beyondMars();
+    expect(newUserAge.marsYearsBeyondExpectancy).toBe(2.13);
+  });
+
 });
