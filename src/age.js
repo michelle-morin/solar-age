@@ -5,8 +5,8 @@ export class Age {
     this.venusAge = 0;
     this.marsAge = 0;
     this.jupiterAge = 0;
-    this.biology = "M";
-    this.earthLifeExpectancy = 76;
+    this.biology = "";
+    this.earthLifeExpectancy = 0;
     this.yearsLeftMercury = 0;
     this.yearsLeftVenus = 0;
     this.yearsLeftMars = 0;
@@ -32,6 +32,10 @@ export class Age {
 
   userBiology(biology) {
     this.biology = biology;
+  }
+
+  earthExpectancy() {
+
   }
 
 }
