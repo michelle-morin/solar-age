@@ -15,11 +15,11 @@ export class Age {
   }
 
   determineMercuryAge() {
-    this.mercuryAge += Math.round((this.earthAge / 0.24));
+    this.mercuryAge = parseFloat((this.earthAge / 0.24).toFixed(2));
   }
 
   determineVenusAge() {
-    this.venusAge += Math.round((this.earthAge / 0.62));
+    this.venusAge = parseFloat((this.earthAge / 0.62).toFixed(2));
   }
 
 }
