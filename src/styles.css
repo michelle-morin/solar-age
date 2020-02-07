@@ -1,3 +1,17 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pd36-1-afrc2017-0233-005.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1800&s=5a0831a948fd284291ce7e8b575f16fb");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ff8851;
+}
+
 #output {
   display: none;
 }
@@ -5,5 +19,50 @@
 button.btn {
   width: 100%;
   margin-top: 2%;
-  border: 1px solid #111111;
+  border: 1px solid #ff8851;
+  color: #ff8851;
+  font-weight: bold;
+}
+
+button.btn:hover {
+  width: 100%;
+  margin-top: 2%;
+  color: #111111;
+  background-color: #ff8851;
+}
+
+input.form-control {
+  background-color: transparent;
+  color: #ff8851;
+}
+
+input.form-control:focus {
+  background-color: transparent;
+  color: #ff8851;
+}
+
+.jumbotron {
+  margin-top: 5%;
+  text-align: center;
+  color: #f5f5f5;
+  -webkit-text-stroke-color: #ff8851;
+  -webkit-text-stroke-width: 1px;
+  background-color: transparent;
+  border: 2px solid #ff8851;
+}
+
+.jumbotron h1 {
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.card {
+  padding: 5%;
+  background-color: transparent;
+  border: 2px solid #ff8851;
+}
+
+h3 {
+  margin-top: 5%;
+  font-weight: bold;
 }
