@@ -26,7 +26,7 @@ _This application takes a person’s age in Earth years and creates a class that
 | Webpage determines number of Mars years a person has lived beyond their life expectancy | 85 Earth years, female | 2.13 Mars years |
 | Webpage determines number of Jupiter years a person has lived beyond their life expectancy | 85 Earth years, female | 0.34 Jupiter years |
 | Webpage determines number of mayfly lifespans that a user has lived | 30 Earth years | 3153600 |
-| Webpage compares number of mayfly lifespans that a user has lived to the number of mayfly lifespans the sun has been in existence | 30 Earth years | 3153600/2.3652e+15 = 1.33e-9 |
+| Webpage compares number of mayfly lifespans that a user has lived to the number of mayfly lifespans the sun has been in existence | 30 Earth years | 3153600/4.7304e+14 = 6.67e-9 |
 
 _Note: estimates for life expectancy on Earth are obtained from [statista](https://www.statista.com/statistics/274513/life-expectancy-in-north-america/) and only relevant for individuals living in North America. The estimates are:_
 * _Female life expectancy: 81 Earth years_
