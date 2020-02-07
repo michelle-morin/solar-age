@@ -15,6 +15,7 @@ export class Age {
     this.venusYearsBeyondExpectancy = 0;
     this.marsYearsBeyondExpectancy = 0;
     this.jupiterYearsBeyondExpectancy = 0;
+    this.mayflyLives = 0;
   }
 
   determinePlanetAges() {
@@ -51,4 +52,7 @@ export class Age {
     }
   }
 
+  determineMayflyLives() {
+
+  }
 }
