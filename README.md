@@ -13,7 +13,7 @@ _This application takes a person’s age in Earth years and creates a class that
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| -------------------:|
 | Webpage determines a person's age in Mercury years (one Mercury year = 0.24 Earth years) | 30 Earth years | 125 Mercury years |
-| Webpage determines a person's age in Venus years (one Venus year = 0.62 Earth years) | 30 Earth years | 48.38 Venus years |
+| Webpage determines a person's age in Venus years (one Venus year = 0.62 Earth years) | 30 Earth years | 48.39 Venus years |
 | Webpage determines a person's age in Mars years (one Mars year = 1.88 Earth years) | 30 Earth years | 15.96 Mars years |
 | Webpage determines a person's age in Jupiter years (one Jupiter year = 11.86 Earth years) | 30 Earth years | 2.53 Jupiter years |
 | Webpage determines a person's life expectancy on Earth | female, lives in North America | 81 Earth years |
