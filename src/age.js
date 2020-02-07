@@ -62,13 +62,15 @@ export class Age {
   }
   
   beyondMercury() {
-    if (this.earthLifeExpectancy != 0) {
+    if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
       this.mercuryYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 0.24).toFixed(2));
     }
   }
 
   beyondVenus() {
-    
+    if (this.earthAge > this.earthLifeExpectancy && this.earthLifeExpectancy != 0) {
+      this.venusYearsBeyondExpectancy = parseFloat(((this.earthAge - this.earthLifeExpectancy) / 0.62).toFixed(2));
+    }
   }
 
 }
