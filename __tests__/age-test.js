@@ -73,7 +73,7 @@ describe('Age', () => {
     let newUserAge = new Age(85);
     newUserAge.userBiology("F");
     newUserAge.earthExpectancy();
-    newUserAge.beyondExpectancy();
+    newUserAge.determineBeyondExpectancy();
     expect(newUserAge.mercuryYearsBeyondExpectancy).toBe(16.67);
   });
 
@@ -81,7 +81,7 @@ describe('Age', () => {
     let newUserAge = new Age(85);
     newUserAge.userBiology("F");
     newUserAge.earthExpectancy();
-    newUserAge.beyondExpectancy();
+    newUserAge.determineBeyondExpectancy();
     expect(newUserAge.venusYearsBeyondExpectancy).toBe(6.45);
   });
 
@@ -89,7 +89,7 @@ describe('Age', () => {
     let newUserAge = new Age(85);
     newUserAge.userBiology("F");
     newUserAge.earthExpectancy();
-    newUserAge.beyondExpectancy();
+    newUserAge.determineBeyondExpectancy();
     expect(newUserAge.marsYearsBeyondExpectancy).toBe(2.13);
   });
 
@@ -97,7 +97,7 @@ describe('Age', () => {
     let newUserAge = new Age(85);
     newUserAge.userBiology("F");
     newUserAge.earthExpectancy();
-    newUserAge.beyondExpectancy();
+    newUserAge.determineBeyondExpectancy();
     expect(newUserAge.jupiterYearsBeyondExpectancy).toBe(0.34);
   });
 });
