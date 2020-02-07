@@ -28,6 +28,11 @@ describe('Age', () => {
   test('should determine user age in Jupiter years', () => {
     userAge.determineJupiterAge();
     expect(userAge.jupiterAge).toBe(2.53);
-  })
+  });
+
+  test('should correctly update user biological information', () => {
+    userAge.userBiology("F");
+    expect(userAge.biology).toBe("F");
+  });
 
 });
