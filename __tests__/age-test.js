@@ -69,4 +69,12 @@ describe('Age', () => {
     expect(userAge.yearsLeftJupiter).toBe(4.30);
   });
 
+  test('should determine number of Mercury years a user has lived beyond life expectancy', () => {
+    let newUserAge = new Age(85);
+    newUserAge.userBiology("F");
+    newUserAge.earthExpectancy();
+    newUserAge.beyondMercury();
+    expect(newUserAge.mercuryYearsBeyondExpectancy).toBe(16.67);
+  });
+
 });
