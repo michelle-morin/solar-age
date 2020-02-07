@@ -35,7 +35,11 @@ export class Age {
   }
 
   earthExpectancy() {
-
+    if (this.biology === "F") {
+      this.earthLifeExpectancy = 81;
+    } else if (this.biology === "M") {
+      this.earthLifeExpectancy = 76;
+    } 
   }
 
 }
