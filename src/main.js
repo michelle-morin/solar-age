@@ -25,6 +25,5 @@ $(document).ready(function() {
     } else {
       ageNotNumber();
     }
-
   });
 });
