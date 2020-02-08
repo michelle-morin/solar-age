@@ -41,6 +41,7 @@ export function displayOverExp(inputAge) {
 
 export function displayAtExp() {
   $("#under-expectancy").hide();
-  $("#over-expectancy").show();
+  $("#over-expectancy").hide();
   $("#at-expectancy").show();
+  $("#output").append("<a href='index.html'>Calculate again!</a>");
 }
