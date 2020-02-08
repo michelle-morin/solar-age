@@ -53,15 +53,15 @@ _Please visit the [Node.js website](https://nodejs.org/en/download/) for install
 
 #### Install this application
 
-_Clone this repository via Terminal:_
-* _Navigate to the desktop in Terminal by entering "cd desktop"_
-* _Enter: "git clone" followed by the url for this repository._
-* _Navigate to the project directory by entering "cd solar-age"._
-* _Confirm that you have navigated to the solar-age project directory by entering "pwd" in the Terminal._
+_Clone this repository via Terminal using the following commands:_
+* _$ cd desktop_
+* _$ git clone https://github.com/michelle-morin/solar-age_
+* _$ cd solar-age_
+_Then, confirm that you have navigated to the solar-age project directory by entering "pwd" in Terminal._
 
-_Next, install npm at the project's root directory_
-* _Enter the command "npm install"_
-* _Enter the command "npm run build"_
+_Next, install npm at the project's root directory via the following commands:_
+* _$ npm install_
+* _$ npm run build_
 
 _Open the contents of the directory in a text editor or IDE of your choice (e.g., to open the contents of the directory in Visual Studio Code on macOS, enter the command "code ." in Terminal)._
 
