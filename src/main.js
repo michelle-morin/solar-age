@@ -1,5 +1,5 @@
 import { Age } from './age.js';
-import { ageIsNumber, displayUnderExp, displayOverExp, ageNotNumber } from './display.js';
+import { ageIsNumber, displayUnderExp, displayOverExp, ageNotNumber, displayAtExp } from './display.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,10 +20,12 @@ $(document).ready(function() {
       age.determinePlanetExpectancies();
       age.determineBeyondExpectancy();
       ageIsNumber(age);
-      if (age.earthAge <= age.earthLifeExpectancy) {
+      if (age.earthAge < age.earthLifeExpectancy) {
         displayUnderExp(age);
       } else if (age.earthAge > age.earthLifeExpectancy) {
         displayOverExp(age);
+      } else if (age.earthAge === age.earthLifeExpectancy) {
+        displayAtExp();
       }
     } else {
       ageNotNumber();
