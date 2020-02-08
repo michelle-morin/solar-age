@@ -44,7 +44,7 @@ input.form-control {
   border: 1px solid #ff8851;
 }
 
-input.form-control:focus {
+input.form-control:focus, input.form-control:active {
   background-color: transparent;
   color: #ff8851;
   border: 1px solid #ff8851;
@@ -84,11 +84,11 @@ h3 {
 }
 
 a {
-  color: #ff8851;
+  color: #b4f5fd;
   font-weight: bold;
 }
 
 a:hover {
-  color: #ff8851;
+  color: #b4f5fd;
   font-weight: bold;
 }
