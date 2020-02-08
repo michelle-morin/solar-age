@@ -20,6 +20,7 @@ export function ageNotNumber() {
 export function displayUnderExp(inputAge) {
   $("#under-expectancy").show();
   $("#over-expectancy").hide();
+  $("#at-expectancy").hide();
   $(".life-mercury").html(inputAge.yearsLeftMercury);
   $(".life-jupiter").html(inputAge.yearsLeftJupiter);
   $(".life-mars").html(inputAge.yearsLeftMars);
@@ -29,10 +30,17 @@ export function displayUnderExp(inputAge) {
 
 export function displayOverExp(inputAge) {
   $("#under-expectancy").hide();
+  $("#at-expectancy").hide();
   $("#over-expectancy").show();
   $(".over-mercury").html(inputAge.mercuryYearsBeyondExpectancy);
   $(".over-jupiter").html(inputAge.jupiterYearsBeyondExpectancy);
   $(".over-mars").html(inputAge.marsYearsBeyondExpectancy);
   $(".over-venus").html(inputAge.venusYearsBeyondExpectancy);
   $("#output").append("<a href='index.html'>Calculate again!</a>");
+}
+
+export function displayAtExp() {
+  $("#under-expectancy").hide();
+  $("#over-expectancy").show();
+  $("#at-expectancy").show();
 }
