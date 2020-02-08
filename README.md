@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application takes a person’s age in Earth years and creates a class that returns their age in Mercury years, Venus years, Mars years, and Jupiter years. This application also determines how many years a user has left to live on each planet, and if a user has already surpassed the average life expectancy, returns the number of years they have lived past the life expectancy._
+_This application takes a person’s age in Earth years and creates a class that returns their age in Mercury years, Venus years, Mars years, and Jupiter years. This application also determines how many years a user has left to live on each of these planets, and if a user has already surpassed the average life expectancy, returns the number of years they have lived past the life expectancy. The application also returns the number of mayfly lifespans the user has lived compared to the number of mayfly lifespans the Earth's sun has lived._
 
 ## Specifications:
 
@@ -28,11 +28,9 @@ _This application takes a person’s age in Earth years and creates a class that
 | Webpage determines number of mayfly lifespans that a user has lived | 30 Earth years | 3153600 |
 | Webpage compares number of mayfly lifespans that a user has lived to the number of mayfly lifespans the sun has been in existence | 30 Earth years | 3153600/4.7304e+14 = 6.67e-9 |
 
-_Note: estimates for life expectancy on Earth are obtained from [statista](https://www.statista.com/statistics/274513/life-expectancy-in-north-america/) and only relevant for individuals living in North America. The estimates are:_
-* _Female life expectancy: 81 Earth years_
-* _Male life expectancy: 76 years_
+_Note: average male and female life expectancies on Earth (76 and 81 years, respectively) are obtained from [statista](https://www.statista.com/statistics/274513/life-expectancy-in-north-america/) and are only relevant for individuals living in North America. When a user selects the 'prefer not to answer' option, the user is assigned the average male life expectancy._
 
-_Note: approximate age of the sun (4.5 billion Earth years) is obtained from [NASA](https://solarsystem.nasa.gov/solar-system/sun/in-depth/). The mayfly lifespan calculation does not take into account leap years._
+_Note: approximate age of the sun (4.5 billion Earth years) obtained from [NASA](https://solarsystem.nasa.gov/solar-system/sun/in-depth/). The mayfly lifespan calculations do not consider leap years._
 
 ## Setup/Installation Requirements
 
@@ -65,7 +63,7 @@ _Next, install npm at the project's root directory_
 * _Enter the command "npm install"_
 * _Enter the command "npm run build"_
 
-_Open the contents of the directory in a text editor or IDE of your choice (e.g., to open the contents of the directory in Visual Studio Code, enter the command "code ." in the Terminal)._
+_Open the contents of the directory in a text editor or IDE of your choice (e.g., to open the contents of the directory in Visual Studio Code on macOS, enter the command "code ." in Terminal)._
 
 ## Technologies Used
 
