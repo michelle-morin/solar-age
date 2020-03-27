@@ -8,6 +8,8 @@
 
 _This application takes a person’s age in Earth years and creates a class that returns their age in Mercury years, Venus years, Mars years, and Jupiter years. This application also determines how many years a user has left to live on each of these planets, and if a user has already surpassed the average life expectancy, returns the number of years they have lived past the life expectancy. The application also returns the number of mayfly lifespans the user has lived compared to the number of mayfly lifespans the Earth's sun has lived._
 
+_This application is delployed on [Netlify](https://suspicious-hawking-fdebe7.netlify.com/)._
+
 ## Specifications:
 
 | Specification | Example Input | Example Output |
